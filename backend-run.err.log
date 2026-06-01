@@ -1,0 +1,37 @@
+Starting the MongoMemoryServer Instance failed, enable debug log for more information. Error:
+ Error: spawn EPERM
+    at ChildProcess.spawn (node:internal/child_process:421:11)
+    at spawn (node:child_process:796:9)
+    at MongoInstance._launchMongod (C:\Users\Shubhangam\OneDrive\Desktop\Management System\backend\node_modules\mongodb-memory-server-core\lib\util\MongoInstance.js:250:56)
+    at MongoInstance.start (C:\Users\Shubhangam\OneDrive\Desktop\Management System\backend\node_modules\mongodb-memory-server-core\lib\util\MongoInstance.js:158:35)
+    at async MongoInstance.create (C:\Users\Shubhangam\OneDrive\Desktop\Management System\backend\node_modules\mongodb-memory-server-core\lib\util\MongoInstance.js:85:9)
+    at async MongoMemoryServer._startUpInstance (C:\Users\Shubhangam\OneDrive\Desktop\Management System\backend\node_modules\mongodb-memory-server-core\lib\MongoMemoryServer.js:226:26)
+    at async MongoMemoryServer.start (C:\Users\Shubhangam\OneDrive\Desktop\Management System\backend\node_modules\mongodb-memory-server-core\lib\MongoMemoryServer.js:85:9)
+    at async MongoMemoryServer.create (C:\Users\Shubhangam\OneDrive\Desktop\Management System\backend\node_modules\mongodb-memory-server-core\lib\MongoMemoryServer.js:64:9)
+    at async connectDB (file:///C:/Users/Shubhangam/OneDrive/Desktop/Management%20System/backend/src/config/db.js:7:26)
+    at async startServer (file:///C:/Users/Shubhangam/OneDrive/Desktop/Management%20System/backend/src/server.js:29:3) {
+  errno: -4048,
+  code: 'EPERM',
+  syscall: 'spawn'
+}
+node:internal/process/promises:394
+    triggerUncaughtException(err, true /* fromPromise */);
+    ^
+
+Error: spawn EPERM
+    at ChildProcess.spawn (node:internal/child_process:421:11)
+    at spawn (node:child_process:796:9)
+    at MongoInstance._launchMongod (C:\Users\Shubhangam\OneDrive\Desktop\Management System\backend\node_modules\mongodb-memory-server-core\lib\util\MongoInstance.js:250:56)
+    at MongoInstance.start (C:\Users\Shubhangam\OneDrive\Desktop\Management System\backend\node_modules\mongodb-memory-server-core\lib\util\MongoInstance.js:158:35)
+    at async MongoInstance.create (C:\Users\Shubhangam\OneDrive\Desktop\Management System\backend\node_modules\mongodb-memory-server-core\lib\util\MongoInstance.js:85:9)
+    at async MongoMemoryServer._startUpInstance (C:\Users\Shubhangam\OneDrive\Desktop\Management System\backend\node_modules\mongodb-memory-server-core\lib\MongoMemoryServer.js:226:26)
+    at async MongoMemoryServer.start (C:\Users\Shubhangam\OneDrive\Desktop\Management System\backend\node_modules\mongodb-memory-server-core\lib\MongoMemoryServer.js:85:9)
+    at async MongoMemoryServer.create (C:\Users\Shubhangam\OneDrive\Desktop\Management System\backend\node_modules\mongodb-memory-server-core\lib\MongoMemoryServer.js:64:9)
+    at async connectDB (file:///C:/Users/Shubhangam/OneDrive/Desktop/Management%20System/backend/src/config/db.js:7:26)
+    at async startServer (file:///C:/Users/Shubhangam/OneDrive/Desktop/Management%20System/backend/src/server.js:29:3) {
+  errno: -4048,
+  code: 'EPERM',
+  syscall: 'spawn'
+}
+
+Node.js v24.14.1
